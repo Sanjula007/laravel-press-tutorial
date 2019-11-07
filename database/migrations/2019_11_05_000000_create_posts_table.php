@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
 	public function up ()
 	{
 		Schema::create ( 'posts' , function ( Blueprint $table ) {
+
 			$table->bigIncrements ( 'id' );
 			$table->string ( 'identifier' )->index ();
 			$table->string ( 'slug' )->unique ()->index ();
@@ -25,7 +26,7 @@ class CreatePostsTable extends Migration
 			$table->text ( 'body' );
 			$table->text ( 'extra' );
 			$table->timestamps ();
-			$table->softDeletes ();
+			$table->softDeletes ()->nullable ();
 
 			$table->index ( 'created_at' );
 			$table->index ( 'updated_at' );
