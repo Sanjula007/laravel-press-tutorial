@@ -10,8 +10,15 @@ namespace sanjula007\Press;
 
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Post extends Model
 {
 	protected $guarded = [];
+
+
+	public function test ()
+	{
+		DB::table ( 'fds' );
+	}
 }

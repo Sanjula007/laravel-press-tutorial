@@ -9,6 +9,8 @@
 namespace sanjula007\Press\Tests;
 
 
+use sanjula007\Press\PressBaseServiceProvider;
+
 class TestCase extends \Orchestra\Testbench\TestCase
 {
 	protected function setUp ()
@@ -30,7 +32,9 @@ class TestCase extends \Orchestra\Testbench\TestCase
 	 */
 	protected function getPackageProviders ( $app )
 	{
-		return [];
+		return [
+			PressBaseServiceProvider::class
+		];
 	}
 
 	protected function getEnvironmentSetUp ( $app )
