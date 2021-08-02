@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\DB;
 
 class Post extends Model
 {
-	protected $guarded = [];
+    protected $guarded = [];
 
 
-	public function test ()
-	{
-		DB::table ( 'fds' );
-	}
+    public function test()
+    {
+        DB::table('fds');
+    }
 }

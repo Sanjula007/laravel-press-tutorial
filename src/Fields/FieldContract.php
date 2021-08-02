@@ -11,10 +11,10 @@ namespace sanjula007\Press\Fields;
 
 abstract class FieldContract
 {
-	public static function process ( $fieldType , $fieldValue , $data )
-	{
-		return [
-			$fieldType => $fieldValue
-		];
-	}
+    public static function process($fieldType, $fieldValue, $data)
+    {
+        return [
+            $fieldType => $fieldValue,
+        ];
+    }
 }

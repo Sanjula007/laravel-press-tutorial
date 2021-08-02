@@ -14,16 +14,16 @@ use Orchestra\Testbench\TestCase;
 class InitialTest extends TestCase
 {
 
-	/** @test */
-	public function test ()
-	{
-		$this->assertTrue ( true );
-	}
+    /** @test */
+    public function test()
+    {
+        $this->assertTrue(true);
+    }
 
-	/** @test */
-	public function my_second_test ()
-	{
-		$this->assertTrue ( true );
-	}
+    /** @test */
+    public function my_second_test()
+    {
+        $this->assertTrue(true);
+    }
 
 }

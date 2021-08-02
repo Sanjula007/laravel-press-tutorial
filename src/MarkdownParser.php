@@ -13,10 +13,9 @@ use Parsedown;
 class MarkdownParser
 {
 
-	public static function parse ( string $string )
-	{
-
-		return Parsedown::instance ()->text ( $string );
-	}
+    public static function parse(string $string)
+    {
+        return Parsedown::instance()->text($string);
+    }
 }
 

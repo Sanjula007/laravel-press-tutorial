@@ -13,22 +13,20 @@ use Illuminate\Support\ServiceProvider;
 
 class PressBaseServiceProvider extends ServiceProvider
 {
-	/**
-	 *
-	 */
-	public function boot ()
-	{
-		$this->registerResources ();
-	}
+    /**
+     *
+     */
+    public function boot()
+    {
+        $this->registerResources();
+    }
 
-	private function registerResources ()
-	{
+    private function registerResources()
+    {
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+    }
 
-		$this->loadMigrationsFrom ( __DIR__ . '/../database/migrations' );
-	}
-
-	public function register ()
-	{
-
-	}
+    public function register()
+    {
+    }
 }

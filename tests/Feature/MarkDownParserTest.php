@@ -16,12 +16,11 @@ use sanjula007\Press\MarkdownParser;
 
 class MarkDownParserTest extends TestCase
 {
-	/** @test */
-	public function experiment ()
-	{
-		$parsedown = new Parsedown();
-		$outout    = MarkdownParser::parse ( '# Heading' );
-		$this->assertStringContainsStringIgnoringCase ( "Heading" , $outout );
-
-	}
+    /** @test */
+    public function experiment()
+    {
+        $parsedown = new Parsedown();
+        $outout = MarkdownParser::parse('# Heading');
+        $this->assertStringContainsStringIgnoringCase("Heading", $outout);
+    }
 }

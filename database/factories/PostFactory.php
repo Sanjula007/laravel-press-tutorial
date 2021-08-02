@@ -8,12 +8,12 @@
 
 use Illuminate\Support\Str;
 
-$factory->define ( \sanjula007\Press\Post::class , function ( \Faker\Generator $faker ) {
-	return [
-		'identifier' => Str::random ( 12 ) ,
-		'slug'       => str_slug ( $faker->sentence ) ,
-		'title'      => $faker->sentence ,
-		'body'       => $faker->paragraph ,
-		'extra'      => json_encode ( [] )
-	];
-} );
+$factory->define(\sanjula007\Press\Post::class, function (\Faker\Generator $faker) {
+    return [
+        'identifier' => Str::random(12),
+        'slug'       => str_slug($faker->sentence),
+        'title'      => $faker->sentence,
+        'body'       => $faker->paragraph,
+        'extra'      => json_encode([]),
+    ];
+});
